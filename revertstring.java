@@ -6,7 +6,6 @@ class revertstring{
         Scanner obj = new Scanner(System.in);
         String s1 = obj.nextLine();
         String s2 = "";
-        char ch;
         for(int i=0 ; i<s1.length(); i++){
             // ch= s1.charAt(i); //extracts each character
             // s2= ch+s2;
