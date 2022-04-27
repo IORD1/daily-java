@@ -1,11 +1,27 @@
 import java.util.Scanner;
 
-class addmatrix{
+class mulitplymat{
     public static void addmat(int mat1[][] , int mat2[][]){
         System.out.println("Addition of both matrix is : ");
         for(int i=0; i<3; i++){
             for(int j=0; j<3; j++){
                 System.out.print((mat1[i][j] + mat2[i][j]) + "  ");
+            }
+            System.out.println(" ");
+        }
+    }
+    
+    public static void multimat(int mat1[][] ,int mat2[][]){
+        int sum =0;
+        System.out.println("Mulitplication of both matrix is : ");
+        for(int i=0;i<3; i++){
+            for(int j=0; j<3; j++){
+                for(int k=0; k<3; k++){
+                    sum = sum + (mat1[i][k] * mat2[k][j]);
+                }
+                System.out.print("  " + sum);
+
+                sum = 0;
             }
             System.out.println(" ");
         }
@@ -34,5 +50,6 @@ class addmatrix{
         }
 
         addmat(mat1,mat2);
+        multimat(mat1, mat2);
     }
 }
